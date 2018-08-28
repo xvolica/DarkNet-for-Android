@@ -7,12 +7,14 @@ Open this project by AndroidStudio 3.0, build and run. The default model is yolo
 # How to use other model
 If you want to use yolov3 or others, please download weights and cfg files and put them into \app\src\main\assets
 
-Then change the path code in DarknetDao.java
+Then change the PATH in DarknetDao.java
 
 e.g.  You can download yolov3.weights from http://pjreddie.com/darknet/
 
 # Something bad
-It's very slow to compute an image on phone by darknet. Predicting an 640x480 image with yolov3 cast about 7 minutes in my test. 
+It's very slow to compute an image on phone by darknet. Predicting an 640x480 image with yolov3 casts about 7 minutes in my test. 
 
-I speculate that darknet is programed by pure c language, without using openblas for acculerate. And also maybe there is something wrong in my code.
+Maybe because that darknet is coded by c language and not using any acculerate structure like openblas.
+
+Or there is maybe something wrong in my code.
 
